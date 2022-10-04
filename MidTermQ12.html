@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){  
+            $("#displayChange").click(function(){
+                var newFont = $("#displays").val();
+                $("ol").css("display", newFont);
+            });
+        });
+        </script>
+    <style>
+    li{
+        background-color: orange;
+        padding:10px;
+        margin:5px;
+    }
+    </style>
+</head>
+<body>
+
+    <ol>
+        <li>Pizza</li>
+        <li>Fries</li>
+        <li>Pumpkin Pie</li>
+    </ol>
+<label>Pick a display</label>
+<select name="displays" id="displays">
+    <option value="inline">Inline</option>
+    <option value="block">Block</option>
+    <option value="inline-block">Inline-block</option>
+</select>
+<button id="displayChange">Change Display</button> 
+</body>
+</html>

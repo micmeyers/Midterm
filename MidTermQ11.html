@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Midterm Q12</title>
+        <style>
+            div{
+                height: 250px;
+                width: 100px;
+                margin: 100px; 
+                border-style: dashed;
+                border-color: magenta;
+                border-width:5px;
+                border-radius: 5px;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+        $(document).ready(function() {
+				var divWidth = $("div").width();
+                    $("div").hover(function(){
+                        $(this).css({border: 'dashed 5px green'}).animate({
+                        width: '400px'},{
+                        duration: 5
+
+    });
+  });
+			});
+        </script>
+        </head>
+        <body>
+            <div class="div"></div>
+        </body>
+</html>
